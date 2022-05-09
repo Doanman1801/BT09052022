@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical"
+        tools:ignore="MissingConstraints">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Thông tin :"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints,UnknownId" />
+    <TextView
+        android:id="@+id/id_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:text="MSSV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/info"
+        tools:ignore="UnknownId" />
+    <EditText
+        android:id="@+id/id_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="@string/enter_mssv_hint"
+        app:layout_constraintBaseline_toBaselineOf="@+id/id_label"
+        app:layout_constraintStart_toEndOf="@+id/id_label"
+        tools:ignore="MissingConstraints"
+        />
+
+    <TextView
+        android:id="@+id/name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_label"
+        tools:ignore="UnknownId" />
+    <EditText
+        android:id="@+id/name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/enter_name_hint"
+        app:layout_constraintBaseline_toBaselineOf="@+id/name_label"
+        app:layout_constraintStart_toEndOf="@+id/name_label"
+        tools:ignore="MissingConstraints"
+        />
+
+    <TextView
+        android:id="@+id/cccd_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:text="CCCD"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_label"
+        tools:ignore="UnknownId" />
+    <EditText
+        android:id="@+id/cccd_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="@string/enter_cccd_hint"
+        app:layout_constraintBaseline_toBaselineOf="@+id/cccd_label"
+        app:layout_constraintStart_toEndOf="@+id/cccd_label"
+        tools:ignore="MissingConstraints"
+        />
+
+
+    <TextView
+        android:id="@+id/phone_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Phone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cccd_label"
+        tools:ignore="UnknownId" />
+    <EditText
+        android:id="@+id/phone_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="@string/enter_phone_hint"
+        app:layout_constraintBaseline_toBaselineOf="@+id/phone_label"
+        app:layout_constraintStart_toEndOf="@+id/phone_label"
+        tools:ignore="MissingConstraints"
+        />
+
+    <TextView
+        android:id="@+id/email_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone_label"
+        tools:ignore="UnknownId" />
+    <EditText
+        android:id="@+id/email_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:ems="10"
+        android:inputType="textCapSentences|textMultiLine"
+        android:hint="@string/enter_email_hint"
+        app:layout_constraintBaseline_toBaselineOf="@+id/email_label"
+        app:layout_constraintStart_toEndOf="@+id/email_label"
+        tools:ignore="MissingConstraints"
+        />
+    <TextView
+        android:id="@+id/dob_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Date of birth"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_label"
+        tools:ignore="UnknownId" />
+
+    <TextView
+        android:id="@+id/dob_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/dob_label"
+        app:layout_constraintStart_toEndOf="@+id/dob_label"
+        tools:ignore="UnknownId" />
+
+    <CalendarView
+        android:id="@+id/simpleCalendarView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dob_label"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/home_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Quê quán"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/simpleCalendarView"
+        tools:ignore="UnknownId" />
+    <EditText
+        android:id="@+id/home_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:ems="10"
+        android:inputType="textCapSentences|textMultiLine"
+        android:hint="@string/enter_home_hint"
+        app:layout_constraintBaseline_toBaselineOf="@+id/home_label"
+        app:layout_constraintStart_toEndOf="@+id/home_label"
+        tools:ignore="DuplicateIds,MissingConstraints"
+        />
+
+    <TextView
+        android:id="@+id/homeNow_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Nơi ở hiện nay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_label"
+        tools:ignore="UnknownId" />
+    <EditText
+        android:id="@+id/homeNow_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:ems="10"
+        android:inputType="textCapSentences|textMultiLine"
+        android:hint="@string/enter_homeNow_hint"
+        app:layout_constraintBaseline_toBaselineOf="@+id/homeNow_label"
+        app:layout_constraintStart_toEndOf="@+id/homeNow_label"
+        tools:ignore="DuplicateIds,MissingConstraints"
+        />
+    <TextView
+        android:id="@+id/major_label"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="24dp"
+
+        android:layout_marginLeft="24dp"
+
+        android:layout_marginTop="24dp"
+
+        android:text="Ngành học hiện tại: "
+
+        android:textSize="14sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/homeNow_label"
+        tools:ignore="UnknownId" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/programLanguage_label">
+        <RadioButton
+            android:id="@+id/KT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kĩ thuật máy tính"
+            tools:layout_editor_absoluteX="24dp"
+            tools:layout_editor_absoluteY="804dp" />
+        <RadioButton
+            android:id="@+id/KH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Khoa học máy tính"
+             />
+    </RadioGroup>
+
+        <TextView
+            android:id="@+id/programLanguage_label"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="24dp"
+
+            android:text="Ngôn ngữ lập trình: "
+
+            android:textSize="14sp"
+
+            app:layout_constraintBottom_toBottomOf="@+id/major_label"
+
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints,UnknownId" />
+
+        <CheckBox
+        android:id="@+id/C_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+            android:layout_marginStart="24dp"
+            android:text="C"
+        app:layout_constraintTop_toBottomOf="@+id/programLanguage_label"
+        tools:layout_editor_absoluteX="220dp"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/Java_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="24dp"
+
+        android:text="Java"
+        app:layout_constraintTop_toBottomOf="@+id/C_id"
+        tools:layout_editor_absoluteX="220dp"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/Python_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="24dp"
+
+        android:text="Python"
+        app:layout_constraintTop_toBottomOf="@+id/Java_id"
+        tools:layout_editor_absoluteX="220dp"
+        tools:ignore="MissingConstraints" />
+
+        <CheckBox
+                android:id="@+id/ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Tôi đã đồng ý điều khoản"
+                app:layout_constraintTop_toBottomOf="@+id/Python_id"
+                tools:layout_editor_absoluteX="220dp"
+                tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/but_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="OK"
+            app:layout_constraintTop_toBottomOf="@id/programLanguage_label" />
+
+    </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
